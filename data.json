@@ -1,0 +1,62 @@
+[
+    {
+        "name": "I Want It That Way",
+        "artist": "Backstreet Boys",
+        "album": "Millennium"
+    },
+    {
+        "name": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night At The Opera"
+    },
+    {
+        "name": "The Final Countdown",
+        "artist": "Europe",
+        "album": "The Final Countdown"
+    },
+    {
+        "name": "Symphony Of Destruction",
+        "artist": "Megadeth",
+        "album": "Countdown To Extinction"
+    },
+    {
+        "name": "Creep",
+        "artist": "Radiohead",
+        "album": "Pablo Honey"
+    },
+    {
+        "name": "Billie Jean",
+        "artist": "Michael Jackson",
+        "album": "Thriller"
+    },
+    {
+        "name": "Mary On A Cross",
+        "artist": "Ghost",
+        "album": "Seven Inches Of Satanic Panic"
+    },
+    {
+        "name": "Carry On Wayward Son",
+        "artist": "Kansas",
+        "album": "Leftoverture"
+    },
+    {
+        "name": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "album": "Nevermind"
+    },
+    {
+        "name": "Everlong",
+        "artist": "Foo Fighters",
+        "album": "The Colour And The Shape"
+    },
+    {
+        "name": "Enter Sandman",
+        "artist": "Metallica",
+        "album": "Metallica"
+    },
+    {
+        "name": "Even Flow",
+        "artist": "Pearl Jam",
+        "album": "Ten"
+    }
+]
