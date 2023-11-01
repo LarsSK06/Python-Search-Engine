@@ -1,12 +1,13 @@
 import json
 import os
+from flask import Flask, request
+app = Flask(__name__)
 
-def main():
+def search(searchQuery):
     if not os.path.exists("data.json"):
         print("No data.json file existing!")
         return
     
-    searchQuery = input("Search field:")
     result = []
     newData = []
     with open("data.json", mode="r", encoding="utf8") as data: newData = json.load(data)
@@ -22,10 +23,23 @@ def main():
             result.append(i)
             continue
 
-    with open("results.json", mode="w", encoding="utf8") as newFile:
-        newFile.write(json.dumps(result, indent=4))
-        newFile.close()
+    return result
 
-    print("Results printed!")
 
-main()
+@app.route("/search", methods=["GET"])
+def getSearchRequest():
+    if not request.headers["host"] == "mywebsite.com":
+        return "Invalid host header!"
+    if not "query" in request.args:
+        return "Link missing 'query' parameter!"
+
+    searchQuery = request.args.get("query")
+    return search(searchQuery)
+
+
+@app.errorhandler(404)
+def returnError():
+    return "There was an unknown error. Please try again later!"
+
+
+app.run(debug=True)
